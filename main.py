@@ -223,6 +223,8 @@ def status():
     </script>
     </body></html>
     '''
+    return render_template_string(status_html, threads=thread_info)
+
 
 if __name__ == '__main__':
     import os
